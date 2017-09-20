@@ -5,7 +5,7 @@ CHROME_DRIVER_VERSION=`curl -sS chromedriver.storage.googleapis.com/LATEST_RELEA
 chrome_driver_path="/c/chromedriver_win32/"
 chrome_driver_old_versions_path="/c/chromedriver_win32/Old/"
 
-
+#Checking if the folder is present or not
 if [ ! -d $chrome_driver_path ]; then
 {
 	mkdir $chrome_driver_path
