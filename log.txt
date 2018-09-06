@@ -1,0 +1,15 @@
+++ curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE
++ CHROME_DRIVER_VERSION=2.32
++ chrome_driver_path=/c/chromedriver_win32/
++ chrome_driver_old_versions_path=/c/chromedriver_win32/Old/
++ existing_driver_version=nill
++ '[' '!' -d /c/chromedriver_win32/ ']'
++ '[' '!' -d /c/chromedriver_win32/Old/ ']'
++ '[' '!' -f /c/chromedriver_win32/chromedriver.exe ']'
+++ /c/chromedriver_win32/chromedriver.exe -v
+++ awk '{print $2}'
++ existing_driver_version=2.32.498550
+++ cut -d. -f1,2
++ '[' 2.32 == 2.32 ']'
++ echo 'Driver is up to date. No need to update it.'
+Driver is up to date. No need to update it.

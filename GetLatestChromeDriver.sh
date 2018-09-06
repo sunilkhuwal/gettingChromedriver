@@ -1,14 +1,19 @@
 #!/bin/bash
 
-	############################################################################
-	#	Developer: Sunil Kumar                                                 #
-	#	Version: 1.0                                                           #
-	#	Date: 20-Sept-2017                                                     #
-	#	Tool Required to Execute the script: Git bash                          #
-	#	Command to Execute on Git Bash: bash -x GetLatestChromeDriver.sh       #
-	#	OS: Windows(Tested)                                                    #
-	############################################################################
+	######################################################################################################
+	#	Developer: Sunil Kumar                                                 
+	#	Version: 1.0                                                           
+	#	Date: 20-Sept-2017                                                     
+	#	Tool Required to Execute the script: Git bash                           
+	#	OS: Windows(Tested)                                                    
+	#	Pre-requisite:  Command wget.exe should be installed in the C:\Program Files (x86)\Git\mingw32\bin
+	#	Or C:\Program Files\Git\mingw32\bin
+	#	Download link: https://eternallybored.org/misc/wget/current/wget.exe
+	#	Command to Execute on Git Bash: bash -x GetLatestChromeDriver.sh      
+	#	Wget Description: https://www.gnu.org/software/wget/
+	#######################################################################################################
 
+	
 # Versions
 CHROME_DRIVER_VERSION=`curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE`
 chrome_driver_path="/c/chromedriver_win32/"                   #Set the home path of driver
@@ -59,4 +64,3 @@ else
 	fi
 }
 fi
-
